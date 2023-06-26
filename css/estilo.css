@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(250, 196, 250);
+}
+ /*cabeçalho do site*/
+ header{
+   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+ }
+ #logo{
+   height: 70px;
+  }
+ .menu ul li{
+  display: inline;
+ }
+ .menu > ul li > a:link{
+  text-decoration: none;
+  color: rgb(216, 0, 126);
+  padding: 10px;
+}
+.menu > ul > li > a:hover{
+  border-bottom: 2px solid rgb(247, 4, 166);
+}
+  .menu > ul > li > a:active{
+    color: rgb(121, 17, 81);
+    border-bottom: 2px solid rgb(247, 4, 166);
+    font-weight: 700;
+  }
+  #ativo{
+    border-bottom: 2px solid rgb(247, 4, 166);
+  }
+
+   /*seções*/
+   #banner-principal{
+      width: 100%;
+     }
+   .container{
+    display: flex;
+    justify-content: space-around;
+   padding: 40px;
+   background-color: aliceblue;
+   }
+   .conteudo{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      max-width: 20%;
+   }
+   .banner{
+      width: 250px;
+      height: 250px;
+      margin-bottom: 20px;
+      border-radius: 40%;
+}
+#video{
+background-color: rgb(196, 1, 92);
+display: flex;
+justify-content: center;
+align-items: center;
+height:500px ;
+border: 3px solid rgb(255, 0, 200);
+}
+#video > .container > img{
+  height: 315px;
+}
+/*RODAPE*/
+footer{
+  text-align: center;
+  padding: 20px;
+}
+footer > p > a{
+  text-decoration: none;
+  color: rgb(255, 0, 255);
+}

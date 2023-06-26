@@ -1,0 +1,125 @@
+:root {
+  --color-base: #000000;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-base);
+}
+
+ul {
+  list-style: none;
+  gap: 10px;
+  font-size: var(--text-xl);
+}
+
+li {
+  padding: 0px 5px;
+  border-bottom: 2px solid white;
+}
+
+li:link {
+  color: #000000;
+}
+
+li:hover {
+  border-bottom: 2px solid green;
+}
+
+li:active {
+  color: #000000;
+  border-bottom: 2px solid green;
+}
+
+h2 {
+  font-size: var(--text-xl);
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+  margin: 1vw;
+}
+
+nav {
+  margin: 0 2vw;
+}
+
+.banner {
+  width: 100vw;
+  margin: 30px 0px;
+}
+
+.articles {
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+  margin: 30px 0px;
+}
+
+article {
+  display: block;
+  text-align: center;
+}
+
+article > img{
+  height: 250px;
+  width: 250px;
+  border-radius: 30%;
+  margin: auto;
+}
+
+article > div {
+  margin-top: 10px;
+  font-size: var(--text-base);
+}
+
+article > div > div {
+  justify-content: center;
+}
+
+.redes {
+  font-size: 50px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .articles {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 20px;
+  }
+  
+  .logo {
+    width: 70%;
+    margin: 1vw;
+  }
+}
